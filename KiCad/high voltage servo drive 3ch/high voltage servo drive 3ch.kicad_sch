@@ -1,20 +1,26 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "eecae1c5-422c-4f4e-9e29-a72e69fc94b3")
 	(paper "A2")
 	(lib_symbols
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -23,6 +29,8 @@
 			)
 			(property "Value" "R_US"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -31,62 +39,60 @@
 			)
 			(property "Footprint" ""
 				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_US_0_1"
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 2.286) (xy 0 2.54)
@@ -101,7 +107,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -125,7 +131,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -140,7 +158,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -158,7 +176,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -174,26 +192,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3.3V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -202,56 +231,52 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -273,12 +298,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -294,13 +331,8 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-	)
-	(bus_alias "CURRENT_SENSE"
-		(members "U_P" "U_N" "V_P" "V_N" "W_P" "W_N")
-	)
-	(bus_alias "PHASE_PWM"
-		(members "HIN_U" "LIN_U" "HIN_V" "LIN_V" "HIN_W" "LIN_W")
 	)
 	(junction
 		(at 125.73 179.07)
@@ -343,6 +375,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf7608db-cddc-4e56-bfeb-0ef78ff107c8")
+	)
+	(no_connect
+		(at 173.99 212.09)
+		(uuid "722e0b2b-1363-4372-811f-bb8428890830")
+	)
+	(no_connect
+		(at 173.99 163.83)
+		(uuid "930ddc14-7160-4f38-9e37-5ecb3c4b7fdb")
+	)
+	(no_connect
+		(at 173.99 175.26)
+		(uuid "b39e8fda-7d1c-4b03-9459-224a165c826a")
+	)
+	(no_connect
+		(at 173.99 224.79)
+		(uuid "b5422de6-4e3e-42b8-9138-c66d9aeca3aa")
+	)
+	(no_connect
+		(at 173.99 219.71)
+		(uuid "e699cdf1-8c71-43af-9c41-778b0c0c5e77")
 	)
 	(bus_entry
 		(at 389.89 240.03)
@@ -3483,7 +3535,6 @@
 	)
 	(label "MOTOR_B.LIN_U"
 		(at 245.11 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3494,7 +3545,6 @@
 	)
 	(label "MOTOR_A.HIN_W"
 		(at 245.11 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3505,7 +3555,6 @@
 	)
 	(label "MOTOR_C.LIN_V"
 		(at 407.67 323.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3516,7 +3565,6 @@
 	)
 	(label "MOTOR_C.LIN_W"
 		(at 245.11 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3527,7 +3575,6 @@
 	)
 	(label "MOTOR_B.V_P"
 		(at 407.67 266.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3538,7 +3585,6 @@
 	)
 	(label "INVERTER_A_FAULT"
 		(at 407.67 163.83 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3549,7 +3595,6 @@
 	)
 	(label "MOTOR_A.V_P"
 		(at 314.96 151.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3560,7 +3605,6 @@
 	)
 	(label "MOTOR_C.HIN_V"
 		(at 245.11 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3571,7 +3615,6 @@
 	)
 	(label "MOTOR_A.HIN_W"
 		(at 407.67 177.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3582,7 +3625,6 @@
 	)
 	(label "MOTOR_B.LIN_V"
 		(at 245.11 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3593,7 +3635,6 @@
 	)
 	(label "MOTOR_B.LIN_V"
 		(at 407.67 254 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3604,7 +3645,6 @@
 	)
 	(label "MOTOR_C.W_N"
 		(at 407.67 344.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3615,7 +3655,6 @@
 	)
 	(label "MOTOR_A.HIN_V"
 		(at 407.67 175.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3626,7 +3665,6 @@
 	)
 	(label "MOTOR_C.U_P"
 		(at 314.96 184.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3637,7 +3675,6 @@
 	)
 	(label "MOTOR_C.LIN_U"
 		(at 407.67 321.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3648,7 +3685,6 @@
 	)
 	(label "MOTOR_B.U_N"
 		(at 407.67 264.16 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3659,7 +3695,6 @@
 	)
 	(label "MOTOR_A.W_P"
 		(at 314.96 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3670,7 +3705,6 @@
 	)
 	(label "MOTOR_B.W_P"
 		(at 314.96 175.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3681,7 +3715,6 @@
 	)
 	(label "PWM_DISABLE_2"
 		(at 167.64 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3692,7 +3725,6 @@
 	)
 	(label "MOTOR_B.HIN_V"
 		(at 407.67 245.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3703,7 +3735,6 @@
 	)
 	(label "MOTOR_B.U_N"
 		(at 314.96 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3714,7 +3745,6 @@
 	)
 	(label "PWM_DISABLE_1"
 		(at 167.64 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3725,7 +3755,6 @@
 	)
 	(label "STO_FBK"
 		(at 101.6 184.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3736,7 +3765,6 @@
 	)
 	(label "MOTOR_B{PHASE_PWM}"
 		(at 314.96 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3747,7 +3775,6 @@
 	)
 	(label "INVERTER_C_FAULT"
 		(at 407.67 303.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3758,7 +3785,6 @@
 	)
 	(label "MOTOR_A.LIN_U"
 		(at 407.67 181.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3769,7 +3795,6 @@
 	)
 	(label "INVERTER_C_FAULT"
 		(at 245.11 208.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3780,7 +3805,6 @@
 	)
 	(label "MOTOR_A.V_N"
 		(at 314.96 153.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3791,7 +3815,6 @@
 	)
 	(label "MOTOR_A.LIN_U"
 		(at 245.11 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3802,7 +3825,6 @@
 	)
 	(label "MOTOR_A.W_N"
 		(at 314.96 158.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3813,7 +3835,6 @@
 	)
 	(label "INVERTER_DISABLE"
 		(at 128.27 184.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3824,7 +3845,6 @@
 	)
 	(label "INVERTER_DISABLE"
 		(at 407.67 231.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3835,7 +3855,6 @@
 	)
 	(label "MOTOR_B.LIN_W"
 		(at 407.67 256.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3846,7 +3865,6 @@
 	)
 	(label "MOTOR_A.HIN_U"
 		(at 407.67 172.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3857,7 +3875,6 @@
 	)
 	(label "MOTOR_A.HIN_U"
 		(at 245.11 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3868,7 +3885,6 @@
 	)
 	(label "MOTOR_A.V_P"
 		(at 407.67 196.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3879,7 +3895,6 @@
 	)
 	(label "MOTOR_C.HIN_V"
 		(at 407.67 314.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3890,7 +3905,6 @@
 	)
 	(label "MOTOR_C.LIN_V"
 		(at 245.11 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3901,7 +3915,6 @@
 	)
 	(label "MOTOR_C.LIN_W"
 		(at 407.67 326.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3912,7 +3925,6 @@
 	)
 	(label "MOTOR_C.LIN_U"
 		(at 245.11 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3923,7 +3935,6 @@
 	)
 	(label "MOTOR_C.HIN_U"
 		(at 245.11 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3934,7 +3945,6 @@
 	)
 	(label "MOTOR_C{CURRENT_SENSE}"
 		(at 351.79 327.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3945,7 +3955,6 @@
 	)
 	(label "MOTOR_A.LIN_V"
 		(at 407.67 184.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3956,7 +3965,6 @@
 	)
 	(label "MOTOR_A.LIN_V"
 		(at 245.11 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3967,7 +3975,6 @@
 	)
 	(label "INVERTER_B_TEMP"
 		(at 245.11 195.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3978,7 +3985,6 @@
 	)
 	(label "MOTOR_C.HIN_W"
 		(at 407.67 317.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3989,7 +3995,6 @@
 	)
 	(label "MOTOR_C.V_P"
 		(at 407.67 336.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4000,7 +4005,6 @@
 	)
 	(label "MOTOR_C.U_N"
 		(at 407.67 334.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4011,7 +4015,6 @@
 	)
 	(label "MOTOR_B.W_N"
 		(at 314.96 177.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4022,7 +4025,6 @@
 	)
 	(label "MOTOR_A.W_N"
 		(at 407.67 204.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4033,7 +4035,6 @@
 	)
 	(label "INVERTER_C_TEMP"
 		(at 245.11 198.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4044,7 +4045,6 @@
 	)
 	(label "STO_FBK"
 		(at 167.64 151.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4055,7 +4055,6 @@
 	)
 	(label "MOTOR_B{CURRENT_SENSE}"
 		(at 351.79 257.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4066,7 +4065,6 @@
 	)
 	(label "MOTOR_B.HIN_W"
 		(at 245.11 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4077,7 +4075,6 @@
 	)
 	(label "MOTOR_B.HIN_U"
 		(at 407.67 242.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4088,7 +4085,6 @@
 	)
 	(label "MOTOR_B.V_N"
 		(at 407.67 269.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4099,7 +4095,6 @@
 	)
 	(label "INVERTER_C_TEMP"
 		(at 407.67 298.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4110,7 +4105,6 @@
 	)
 	(label "MOTOR_B.W_P"
 		(at 407.67 271.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4121,7 +4115,6 @@
 	)
 	(label "MOTOR_C.W_P"
 		(at 407.67 341.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4132,7 +4125,6 @@
 	)
 	(label "PWM_DISABLE_1"
 		(at 101.6 176.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4143,7 +4135,6 @@
 	)
 	(label "MOTOR_B.HIN_W"
 		(at 407.67 247.65 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4154,7 +4145,6 @@
 	)
 	(label "MOTOR_A.U_P"
 		(at 314.96 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4165,7 +4155,6 @@
 	)
 	(label "MOTOR_C.V_N"
 		(at 314.96 191.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4176,7 +4165,6 @@
 	)
 	(label "INVERTER_B_FAULT"
 		(at 407.67 233.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4187,7 +4175,6 @@
 	)
 	(label "MOTOR_B.V_P"
 		(at 314.96 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4198,7 +4185,6 @@
 	)
 	(label "MOTOR_B.HIN_U"
 		(at 245.11 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4209,7 +4195,6 @@
 	)
 	(label "MOTOR_C.HIN_W"
 		(at 245.11 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4220,7 +4205,6 @@
 	)
 	(label "MOTOR_A.U_P"
 		(at 407.67 191.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4231,7 +4215,6 @@
 	)
 	(label "MOTOR_B.U_P"
 		(at 314.96 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4242,7 +4225,6 @@
 	)
 	(label "MOTOR_B.LIN_W"
 		(at 245.11 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4253,7 +4235,6 @@
 	)
 	(label "INVERTER_B_TEMP"
 		(at 407.67 228.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4264,7 +4245,6 @@
 	)
 	(label "INVERTER_A_FAULT"
 		(at 245.11 203.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4275,7 +4255,6 @@
 	)
 	(label "MOTOR_C.HIN_U"
 		(at 407.67 312.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4286,7 +4265,6 @@
 	)
 	(label "MOTOR_C.W_P"
 		(at 314.96 194.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4297,7 +4275,6 @@
 	)
 	(label "INVERTER_B_FAULT"
 		(at 245.11 205.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4308,7 +4285,6 @@
 	)
 	(label "MOTOR_C.U_N"
 		(at 314.96 186.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4319,7 +4295,6 @@
 	)
 	(label "MOTOR_A.V_N"
 		(at 407.67 199.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4330,7 +4305,6 @@
 	)
 	(label "MOTOR_A.LIN_W"
 		(at 245.11 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4341,7 +4315,6 @@
 	)
 	(label "MOTOR_A{CURRENT_SENSE}"
 		(at 351.79 187.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4352,7 +4325,6 @@
 	)
 	(label "MOTOR_A.U_N"
 		(at 314.96 148.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4363,7 +4335,6 @@
 	)
 	(label "MOTOR_B.LIN_U"
 		(at 407.67 251.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4374,7 +4345,6 @@
 	)
 	(label "INVERTER_A_TEMP"
 		(at 245.11 193.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4385,7 +4355,6 @@
 	)
 	(label "MOTOR_B.V_N"
 		(at 314.96 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4396,7 +4365,6 @@
 	)
 	(label "MOTOR_A.HIN_V"
 		(at 245.11 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4407,7 +4375,6 @@
 	)
 	(label "MOTOR_B.W_N"
 		(at 407.67 274.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4418,7 +4385,6 @@
 	)
 	(label "MOTOR_A.W_P"
 		(at 407.67 201.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4429,7 +4395,6 @@
 	)
 	(label "MOTOR_A.LIN_W"
 		(at 407.67 186.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4440,7 +4405,6 @@
 	)
 	(label "INVERTER_DISABLE"
 		(at 407.67 161.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4451,7 +4415,6 @@
 	)
 	(label "MOTOR_C.W_N"
 		(at 314.96 196.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4462,7 +4425,6 @@
 	)
 	(label "MOTOR_C.U_P"
 		(at 407.67 331.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4473,7 +4435,6 @@
 	)
 	(label "MOTOR_B.U_P"
 		(at 407.67 261.62 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4484,7 +4445,6 @@
 	)
 	(label "MOTOR_C{PHASE_PWM}"
 		(at 314.96 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4495,7 +4455,6 @@
 	)
 	(label "PWM_DISABLE_2"
 		(at 101.6 179.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4506,7 +4465,6 @@
 	)
 	(label "INVERTER_A_TEMP"
 		(at 407.67 158.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4517,7 +4475,6 @@
 	)
 	(label "MOTOR_B.HIN_V"
 		(at 245.11 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4528,7 +4485,6 @@
 	)
 	(label "MOTOR_A.U_N"
 		(at 407.67 194.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4539,7 +4495,6 @@
 	)
 	(label "MOTOR_C.V_P"
 		(at 314.96 189.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4550,7 +4505,6 @@
 	)
 	(label "MOTOR_A{PHASE_PWM}"
 		(at 314.96 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4561,7 +4515,6 @@
 	)
 	(label "MOTOR_C.V_N"
 		(at 407.67 339.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4572,7 +4525,6 @@
 	)
 	(label "INVERTER_DISABLE"
 		(at 407.67 300.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4585,23 +4537,29 @@
 		(lib_id "power:+3.3V")
 		(at 125.73 162.56 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "082c4064-8270-4338-a49a-8fa15733aea3")
 		(property "Reference" "#PWR0225"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3.3V"
 			(at 125.73 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4610,29 +4568,35 @@
 		)
 		(property "Footprint" ""
 			(at 125.73 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 125.73 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 125.73 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4652,13 +4616,17 @@
 		(at 139.7 171.45 270)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ad59fa5-e334-48ef-a4e4-c3ee75424d9d")
 		(property "Reference" "R120"
 			(at 142.24 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4668,6 +4636,8 @@
 		)
 		(property "Value" "100k"
 			(at 142.24 168.91 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4677,74 +4647,90 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 139.446 170.434 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "cost" "0.0007"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC#" "C60491"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "YAGEO"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part number" "RC0402FR-07100KL"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Generic Allowed?" "yes"
 			(at 139.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4766,14 +4752,18 @@
 		(lib_id "Device:R_US")
 		(at 125.73 166.37 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1bac962-7fa7-40b2-a496-05050584bbd2")
 		(property "Reference" "R148"
 			(at 128.27 165.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,6 +4773,8 @@
 		)
 		(property "Value" "10k"
 			(at 128.27 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,74 +4784,90 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.714 166.116 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "cost" "0.0007"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Generic Allowed?" "yes"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC#" "C60490"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "YAGEO"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part number" "RC0402FR-0710KL"
 			(at 125.73 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4881,13 +4889,17 @@
 		(lib_id "Device:R_US")
 		(at 130.81 179.07 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "da98b876-ca8d-426b-92b5-ad1e65538e00")
 		(property "Reference" "R149"
 			(at 130.81 173.736 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4896,6 +4908,8 @@
 		)
 		(property "Value" "0"
 			(at 130.81 176.276 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,74 +4918,90 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 131.064 178.054 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "cost" "0.0007"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Generic Allowed?" "yes"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC#" "C106231"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "YAGEO"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part number" "RC0402FR-070RL"
 			(at 130.81 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4993,13 +5023,17 @@
 		(lib_id "Device:R_US")
 		(at 120.65 179.07 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e32b5da1-0f15-47da-a352-1c75c0250395")
 		(property "Reference" "R147"
 			(at 120.65 173.736 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,6 +5042,8 @@
 		)
 		(property "Value" "0"
 			(at 120.65 176.276 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5016,74 +5052,90 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 120.904 178.054 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "cost" "0.0007"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Generic Allowed?" "yes"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC#" "C106231"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "YAGEO"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part number" "RC0402FR-070RL"
 			(at 120.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5104,17 +5156,23 @@
 	(sheet
 		(at 105.41 71.12)
 		(size 38.1 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "47b85991-b5ef-4222-bf9a-57130fce0dbd")
 		(property "Sheetname" "Communication"
 			(at 105.41 70.4084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5124,6 +5182,8 @@
 		)
 		(property "Sheetfile" "communication.kicad_sch"
 			(at 105.41 121.2346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,113 +5193,113 @@
 		)
 		(pin "J2_LED0" input
 			(at 143.51 100.33 0)
+			(uuid "a8ecf9c0-add0-4b57-b45c-e405bffce01f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a8ecf9c0-add0-4b57-b45c-e405bffce01f")
 		)
 		(pin "TX_SNOOP" output
 			(at 143.51 83.82 0)
+			(uuid "cf86acaa-15ee-47ee-96cb-8e1f0d42437e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cf86acaa-15ee-47ee-96cb-8e1f0d42437e")
 		)
 		(pin "J1_LED0" input
 			(at 143.51 95.25 0)
+			(uuid "376908ff-51fd-4d00-a883-fa12f9cb68c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "376908ff-51fd-4d00-a883-fa12f9cb68c5")
 		)
 		(pin "J1_LED1" input
 			(at 143.51 97.79 0)
+			(uuid "23c75adf-82cd-4fa8-9134-69f892a032db")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "23c75adf-82cd-4fa8-9134-69f892a032db")
 		)
 		(pin "TX" input
 			(at 143.51 80.01 0)
+			(uuid "8ff022c5-ce02-4a62-9093-14b588742da2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8ff022c5-ce02-4a62-9093-14b588742da2")
 		)
 		(pin "TX_PASSTHROUGH_DISABLE" input
 			(at 143.51 86.36 0)
+			(uuid "8a97eb61-326d-4e34-8fb3-ab2e29288fcc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8a97eb61-326d-4e34-8fb3-ab2e29288fcc")
 		)
 		(pin "RX_PASSTHROUGH_ENABLE" input
 			(at 143.51 88.9 0)
+			(uuid "5deec7aa-a950-4daa-ac5d-52eb5ede6c2e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5deec7aa-a950-4daa-ac5d-52eb5ede6c2e")
 		)
 		(pin "RX" output
 			(at 143.51 77.47 0)
+			(uuid "4a15bbde-f346-4fb5-bd96-539ed24db521")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4a15bbde-f346-4fb5-bd96-539ed24db521")
 		)
 		(pin "J2_LED1" input
 			(at 143.51 102.87 0)
+			(uuid "30233a2f-1140-4f5c-ad7a-c4696c40e5c5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "30233a2f-1140-4f5c-ad7a-c4696c40e5c5")
 		)
 		(pin "FAN_PWM" input
 			(at 143.51 109.22 0)
+			(uuid "95082353-7830-40dd-85e3-d5addafee7a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "95082353-7830-40dd-85e3-d5addafee7a9")
 		)
 		(pin "FAN_TACH" output
 			(at 143.51 111.76 0)
+			(uuid "5e2a110f-a910-4f20-bfe5-82d09ea7899b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5e2a110f-a910-4f20-bfe5-82d09ea7899b")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -5252,17 +5312,23 @@
 	(sheet
 		(at 407.67 289.56)
 		(size 27.94 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4f7de2a4-5f30-4771-b769-d0eba02a861b")
 		(property "Sheetname" "Inverter C"
 			(at 407.67 288.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,6 +5338,8 @@
 		)
 		(property "Sheetfile" "inverter_C.kicad_sch"
 			(at 407.67 351.1046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,203 +5349,203 @@
 		)
 		(pin "U" bidirectional
 			(at 435.61 298.45 0)
+			(uuid "b3e2cb87-dd6a-4fb1-80d9-fec522b19f2a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b3e2cb87-dd6a-4fb1-80d9-fec522b19f2a")
 		)
 		(pin "THERM_1" passive
 			(at 407.67 293.37 180)
+			(uuid "5edae1f3-6bfb-4938-b606-fe6ae850c23f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5edae1f3-6bfb-4938-b606-fe6ae850c23f")
 		)
 		(pin "THERM_2" passive
 			(at 407.67 295.91 180)
+			(uuid "fbba3e74-94a6-4412-a1af-28c9b6149e18")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fbba3e74-94a6-4412-a1af-28c9b6149e18")
 		)
 		(pin "NW_SENSE_P" output
 			(at 407.67 341.63 180)
+			(uuid "89ac5db3-19b5-4fd7-96c3-8ce5db449f24")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "89ac5db3-19b5-4fd7-96c3-8ce5db449f24")
 		)
 		(pin "FAULT_N" output
 			(at 407.67 303.53 180)
+			(uuid "2992e9f7-0833-4e77-b77e-72405ebe125a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2992e9f7-0833-4e77-b77e-72405ebe125a")
 		)
 		(pin "NU_SENSE_P" output
 			(at 407.67 331.47 180)
+			(uuid "bb2b8f28-d01b-4569-8b63-1a5a1f2a6063")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bb2b8f28-d01b-4569-8b63-1a5a1f2a6063")
 		)
 		(pin "NV_SENSE_P" output
 			(at 407.67 336.55 180)
+			(uuid "108b297a-1a35-4a8f-a60b-acc94ff932c7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "108b297a-1a35-4a8f-a60b-acc94ff932c7")
 		)
 		(pin "W" bidirectional
 			(at 435.61 303.53 0)
+			(uuid "9bc00d34-6ac9-4382-9a66-f30fe12c40f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9bc00d34-6ac9-4382-9a66-f30fe12c40f8")
 		)
 		(pin "V" bidirectional
 			(at 435.61 300.99 0)
+			(uuid "a97db1a4-89bb-4abd-9a23-94b34b7958f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a97db1a4-89bb-4abd-9a23-94b34b7958f6")
 		)
 		(pin "TEMP" output
 			(at 407.67 298.45 180)
+			(uuid "2c973d8d-e30c-4c6a-80a9-4affa3a5cdf6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2c973d8d-e30c-4c6a-80a9-4affa3a5cdf6")
 		)
 		(pin "LIN_U" input
 			(at 407.67 321.31 180)
+			(uuid "c2c0b9b6-0a41-43b8-affe-3d080e59c024")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c2c0b9b6-0a41-43b8-affe-3d080e59c024")
 		)
 		(pin "LIN_V" input
 			(at 407.67 323.85 180)
+			(uuid "4765ab2a-bcba-4c5a-bacb-3c614b466b31")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4765ab2a-bcba-4c5a-bacb-3c614b466b31")
 		)
 		(pin "LIN_W" input
 			(at 407.67 326.39 180)
+			(uuid "a9ea4885-cfcd-430e-99c6-5b0622f1b02d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a9ea4885-cfcd-430e-99c6-5b0622f1b02d")
 		)
 		(pin "HIN_W" input
 			(at 407.67 317.5 180)
+			(uuid "5171a886-96ae-49c0-83d9-b5f9e32b4fee")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5171a886-96ae-49c0-83d9-b5f9e32b4fee")
 		)
 		(pin "HIN_U" input
 			(at 407.67 312.42 180)
+			(uuid "ef790bc5-76b7-4ac0-bf39-dbb4134c7be2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ef790bc5-76b7-4ac0-bf39-dbb4134c7be2")
 		)
 		(pin "HIN_V" input
 			(at 407.67 314.96 180)
+			(uuid "9edf50ad-7a83-4003-bf85-ea22a4eb5796")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9edf50ad-7a83-4003-bf85-ea22a4eb5796")
 		)
 		(pin "PROTECT" input
 			(at 407.67 300.99 180)
+			(uuid "72f488c4-febc-424c-a33c-67c1e7825e3d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "72f488c4-febc-424c-a33c-67c1e7825e3d")
 		)
 		(pin "NW_SENSE_N" output
 			(at 407.67 344.17 180)
+			(uuid "750c412d-243c-4ef4-94d7-86ea11fedee6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "750c412d-243c-4ef4-94d7-86ea11fedee6")
 		)
 		(pin "NU_SENSE_N" output
 			(at 407.67 334.01 180)
+			(uuid "041f709a-a319-4fd8-917f-e578e2c6fa9d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "041f709a-a319-4fd8-917f-e578e2c6fa9d")
 		)
 		(pin "NV_SENSE_N" output
 			(at 407.67 339.09 180)
+			(uuid "89eb52b7-fb0e-4f40-bd8b-ff67087e8e54")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "89eb52b7-fb0e-4f40-bd8b-ff67087e8e54")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -5490,17 +5558,23 @@
 	(sheet
 		(at 407.67 149.86)
 		(size 27.94 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "7b2e1e56-2ca1-41be-bdcd-275ac7481d61")
 		(property "Sheetname" "Inverter A"
 			(at 407.67 149.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5510,6 +5584,8 @@
 		)
 		(property "Sheetfile" "inverter_A.kicad_sch"
 			(at 407.67 211.4046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,203 +5595,203 @@
 		)
 		(pin "U" bidirectional
 			(at 435.61 158.75 0)
+			(uuid "9e43dc2d-1edf-4f23-a039-d0e2b96c8368")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9e43dc2d-1edf-4f23-a039-d0e2b96c8368")
 		)
 		(pin "THERM_1" passive
 			(at 407.67 153.67 180)
+			(uuid "7fbf47ef-4e7a-4383-b2d4-02480a0809e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7fbf47ef-4e7a-4383-b2d4-02480a0809e5")
 		)
 		(pin "THERM_2" passive
 			(at 407.67 156.21 180)
+			(uuid "adbe88cc-5840-4271-8a29-82725d1fea75")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "adbe88cc-5840-4271-8a29-82725d1fea75")
 		)
 		(pin "NW_SENSE_P" output
 			(at 407.67 201.93 180)
+			(uuid "fd077d6c-248e-45df-b883-7845425b6cd5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fd077d6c-248e-45df-b883-7845425b6cd5")
 		)
 		(pin "FAULT_N" output
 			(at 407.67 163.83 180)
+			(uuid "8b4c475d-8db5-49c2-a8d4-060fb9a3c7d1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8b4c475d-8db5-49c2-a8d4-060fb9a3c7d1")
 		)
 		(pin "NU_SENSE_P" output
 			(at 407.67 191.77 180)
+			(uuid "edf904db-7a42-4d36-9e57-720c4276bf72")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "edf904db-7a42-4d36-9e57-720c4276bf72")
 		)
 		(pin "NV_SENSE_P" output
 			(at 407.67 196.85 180)
+			(uuid "7d6974ab-b425-44d0-a307-2e41e64aa791")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7d6974ab-b425-44d0-a307-2e41e64aa791")
 		)
 		(pin "W" bidirectional
 			(at 435.61 163.83 0)
+			(uuid "81c7b6e1-ddaf-467a-8a5f-9e69b576e26a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "81c7b6e1-ddaf-467a-8a5f-9e69b576e26a")
 		)
 		(pin "V" bidirectional
 			(at 435.61 161.29 0)
+			(uuid "2b83ff8b-ef7d-48b5-84ef-23cbbeff8b4b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2b83ff8b-ef7d-48b5-84ef-23cbbeff8b4b")
 		)
 		(pin "TEMP" output
 			(at 407.67 158.75 180)
+			(uuid "42c31c56-48e3-4192-9bb6-f80043eea7f9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "42c31c56-48e3-4192-9bb6-f80043eea7f9")
 		)
 		(pin "LIN_U" input
 			(at 407.67 181.61 180)
+			(uuid "d323e212-2926-429a-80b0-3bf7647b9df7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d323e212-2926-429a-80b0-3bf7647b9df7")
 		)
 		(pin "LIN_V" input
 			(at 407.67 184.15 180)
+			(uuid "2231ae65-686f-4b6c-b843-314dc1c24cde")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2231ae65-686f-4b6c-b843-314dc1c24cde")
 		)
 		(pin "LIN_W" input
 			(at 407.67 186.69 180)
+			(uuid "c3cc55e8-e308-4284-a409-7a9f2af38190")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c3cc55e8-e308-4284-a409-7a9f2af38190")
 		)
 		(pin "HIN_W" input
 			(at 407.67 177.8 180)
+			(uuid "359ea288-2551-4879-ba2f-e5b7d9100d11")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "359ea288-2551-4879-ba2f-e5b7d9100d11")
 		)
 		(pin "HIN_U" input
 			(at 407.67 172.72 180)
+			(uuid "85ea3ce0-8906-4b0d-a215-8e7167ac7a39")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "85ea3ce0-8906-4b0d-a215-8e7167ac7a39")
 		)
 		(pin "HIN_V" input
 			(at 407.67 175.26 180)
+			(uuid "ea514707-70b7-4aa6-8b0a-a1fb4884970b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea514707-70b7-4aa6-8b0a-a1fb4884970b")
 		)
 		(pin "PROTECT" input
 			(at 407.67 161.29 180)
+			(uuid "b871389f-a561-474f-8461-ad1af4508812")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b871389f-a561-474f-8461-ad1af4508812")
 		)
 		(pin "NW_SENSE_N" output
 			(at 407.67 204.47 180)
+			(uuid "954e9aa9-deb9-478e-8778-f3aae9bf8219")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "954e9aa9-deb9-478e-8778-f3aae9bf8219")
 		)
 		(pin "NU_SENSE_N" output
 			(at 407.67 194.31 180)
+			(uuid "9fe95991-9d27-443d-bb4a-a7c6f0d3b813")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9fe95991-9d27-443d-bb4a-a7c6f0d3b813")
 		)
 		(pin "NV_SENSE_N" output
 			(at 407.67 199.39 180)
+			(uuid "9b10c8e5-e659-4923-8a60-1331167759df")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9b10c8e5-e659-4923-8a60-1331167759df")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -5728,17 +5804,23 @@
 	(sheet
 		(at 173.99 69.85)
 		(size 71.12 207.01)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "97972930-2eeb-4c0e-9851-224b79e49b2f")
 		(property "Sheetname" "Microcontroller"
 			(at 173.99 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5748,6 +5830,8 @@
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
 			(at 173.99 277.4446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5757,643 +5841,643 @@
 		)
 		(pin "TIM2_CH2" output
 			(at 173.99 163.83 180)
+			(uuid "c0090712-78c2-45d1-8427-6e62cd77e572")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c0090712-78c2-45d1-8427-6e62cd77e572")
 		)
 		(pin "PHASE_I_SENSE_A_V" input
 			(at 245.11 153.67 0)
+			(uuid "4ce5caee-9293-4114-ae1e-f6724e4a7e66")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4ce5caee-9293-4114-ae1e-f6724e4a7e66")
 		)
 		(pin "PHASE_I_SENSE_B_V" input
 			(at 245.11 162.56 0)
+			(uuid "c6daadcb-04cd-4b6d-a2eb-6c16b739cbc5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c6daadcb-04cd-4b6d-a2eb-6c16b739cbc5")
 		)
 		(pin "PHASE_I_SENSE_A_U" input
 			(at 245.11 151.13 0)
+			(uuid "a3c67281-ef52-4f71-8b77-e50440195560")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a3c67281-ef52-4f71-8b77-e50440195560")
 		)
 		(pin "PHASE_I_SENSE_B_U" input
 			(at 245.11 160.02 0)
+			(uuid "d31dc3ad-e8fb-4e06-b872-66a62ddbc829")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d31dc3ad-e8fb-4e06-b872-66a62ddbc829")
 		)
 		(pin "TIM2_CH1" output
 			(at 173.99 175.26 180)
+			(uuid "35242126-e58a-49bf-a2d8-a566731aa84e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "35242126-e58a-49bf-a2d8-a566731aa84e")
 		)
 		(pin "PHASE_PWM_HIGH_B_V" output
 			(at 245.11 101.6 0)
+			(uuid "f4fdb1de-b17f-49b7-9f67-14fe944e9823")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f4fdb1de-b17f-49b7-9f67-14fe944e9823")
 		)
 		(pin "PHASE_PWM_HIGH_C_W" output
 			(at 245.11 125.73 0)
+			(uuid "7d9f6452-90c9-48c4-81fd-5ba1ab9ca295")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7d9f6452-90c9-48c4-81fd-5ba1ab9ca295")
 		)
 		(pin "PHASE_PWM_LOW_B_U" output
 			(at 245.11 99.06 0)
+			(uuid "8a78e538-064a-463b-a10a-e83a45de600a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8a78e538-064a-463b-a10a-e83a45de600a")
 		)
 		(pin "PHASE_PWM_LOW_B_V" output
 			(at 245.11 104.14 0)
+			(uuid "70ca5e14-9847-4915-8acf-cde47f61903b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "70ca5e14-9847-4915-8acf-cde47f61903b")
 		)
 		(pin "PHASE_I_SENSE_C_V" input
 			(at 245.11 171.45 0)
+			(uuid "b66c70b5-4ab6-41ac-9407-978e31095295")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b66c70b5-4ab6-41ac-9407-978e31095295")
 		)
 		(pin "AUX_COMM_DRIVE_ENABLE" output
 			(at 173.99 212.09 180)
+			(uuid "bfc2358d-5176-4844-b83b-a1f837cdd5f3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bfc2358d-5176-4844-b83b-a1f837cdd5f3")
 		)
 		(pin "AUX_COMM_TX" output
 			(at 173.99 219.71 180)
+			(uuid "9fa13d0f-e7f3-4cd3-acad-179e3f9e97ab")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9fa13d0f-e7f3-4cd3-acad-179e3f9e97ab")
 		)
 		(pin "AUX_COMM_RX" input
 			(at 173.99 224.79 180)
+			(uuid "da622f9d-3a90-43da-9a23-5a4f29b7c849")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "da622f9d-3a90-43da-9a23-5a4f29b7c849")
 		)
 		(pin "COMM_SNOOP_RX" input
 			(at 173.99 83.82 180)
+			(uuid "0267e7c6-0814-49d4-a363-86077df2106c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0267e7c6-0814-49d4-a363-86077df2106c")
 		)
 		(pin "PHASE_PWM_HIGH_B_U" output
 			(at 245.11 96.52 0)
+			(uuid "f8fdc36d-2276-4da6-94db-2d75120de9f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f8fdc36d-2276-4da6-94db-2d75120de9f4")
 		)
 		(pin "COMM_TX" output
 			(at 173.99 80.01 180)
+			(uuid "2850a89b-60d9-4c6f-8c63-a2c0a4003e95")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2850a89b-60d9-4c6f-8c63-a2c0a4003e95")
 		)
 		(pin "COMM_RX" input
 			(at 173.99 77.47 180)
+			(uuid "379a527b-7a3b-4bde-afc7-e898051d7640")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "379a527b-7a3b-4bde-afc7-e898051d7640")
 		)
 		(pin "PHASE_PWM_LOW_B_W" output
 			(at 245.11 109.22 0)
+			(uuid "84072575-7f8f-4a1e-9274-0707f2376c66")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "84072575-7f8f-4a1e-9274-0707f2376c66")
 		)
 		(pin "PHASE_I_SENSE_C_W" input
 			(at 245.11 173.99 0)
+			(uuid "bf2d2e9e-c70f-47fe-97ef-bc197d12f317")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bf2d2e9e-c70f-47fe-97ef-bc197d12f317")
 		)
 		(pin "PHASE_PWM_HIGH_B_W" output
 			(at 245.11 106.68 0)
+			(uuid "2b73cceb-f54b-4dcd-9593-2f6f33e4c900")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2b73cceb-f54b-4dcd-9593-2f6f33e4c900")
 		)
 		(pin "TIMER_B_BREAK" bidirectional
 			(at 173.99 128.27 180)
+			(uuid "498fbd57-13cc-4c43-a2c6-62d863861f27")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "498fbd57-13cc-4c43-a2c6-62d863861f27")
 		)
 		(pin "PHASE_I_SENSE_C_U" input
 			(at 245.11 168.91 0)
+			(uuid "575664ba-042d-4e9a-96a7-fda28bad4eee")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "575664ba-042d-4e9a-96a7-fda28bad4eee")
 		)
 		(pin "TIMER_B_BREAK_2" bidirectional
 			(at 173.99 142.24 180)
+			(uuid "7056c774-a853-4c89-b5dc-753228a615eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7056c774-a853-4c89-b5dc-753228a615eb")
 		)
 		(pin "TIMER_A_BREAK" bidirectional
 			(at 173.99 125.73 180)
+			(uuid "666eb11a-60fe-4213-a245-de66a04e93d1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "666eb11a-60fe-4213-a245-de66a04e93d1")
 		)
 		(pin "PHASE_I_SENSE_A_W" input
 			(at 245.11 156.21 0)
+			(uuid "30f5f068-eee1-4e19-8a9a-03b515d1f255")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "30f5f068-eee1-4e19-8a9a-03b515d1f255")
 		)
 		(pin "TIMER_C_BREAK_2" bidirectional
 			(at 173.99 144.78 180)
+			(uuid "470a7fd5-3f86-4014-a78f-7ed609bb6731")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "470a7fd5-3f86-4014-a78f-7ed609bb6731")
 		)
 		(pin "COMM_TX_PASSTHROUGH_DISABLE" output
 			(at 173.99 86.36 180)
+			(uuid "bd7255ff-4a52-4a47-9481-75ae33b16755")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd7255ff-4a52-4a47-9481-75ae33b16755")
 		)
 		(pin "PHASE_PWM_LOW_A_U" output
 			(at 245.11 80.01 0)
+			(uuid "7130579f-ef3f-4c05-a669-d2af19336f5b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7130579f-ef3f-4c05-a669-d2af19336f5b")
 		)
 		(pin "PHASE_PWM_HIGH_A_V" output
 			(at 245.11 82.55 0)
+			(uuid "a2c5d33c-869b-4b3c-892b-dbdfd13c35fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a2c5d33c-869b-4b3c-892b-dbdfd13c35fe")
 		)
 		(pin "PHASE_PWM_LOW_A_V" output
 			(at 245.11 85.09 0)
+			(uuid "206c54eb-7766-4ca9-9e40-6bfc234ca157")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "206c54eb-7766-4ca9-9e40-6bfc234ca157")
 		)
 		(pin "PHASE_PWM_HIGH_A_W" output
 			(at 245.11 87.63 0)
+			(uuid "d694ccb4-6ed7-4ab9-be2e-b0a36442896c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d694ccb4-6ed7-4ab9-be2e-b0a36442896c")
 		)
 		(pin "PHASE_PWM_LOW_A_W" output
 			(at 245.11 90.17 0)
+			(uuid "cc8e53d9-5afa-4de0-8c9a-5457567b8121")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cc8e53d9-5afa-4de0-8c9a-5457567b8121")
 		)
 		(pin "PHASE_PWM_LOW_C_V" output
 			(at 245.11 123.19 0)
+			(uuid "38bfa982-0167-4e10-8390-544b47bf0015")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "38bfa982-0167-4e10-8390-544b47bf0015")
 		)
 		(pin "PHASE_PWM_HIGH_C_V" output
 			(at 245.11 120.65 0)
+			(uuid "e09fe7ac-be73-48be-aace-84b175148a80")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e09fe7ac-be73-48be-aace-84b175148a80")
 		)
 		(pin "PHASE_PWM_LOW_C_U" output
 			(at 245.11 118.11 0)
+			(uuid "99ba66ce-d3a4-4187-9a78-6404ea6e85e7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "99ba66ce-d3a4-4187-9a78-6404ea6e85e7")
 		)
 		(pin "PHASE_PWM_HIGH_C_U" output
 			(at 245.11 115.57 0)
+			(uuid "66f75eaf-5b42-48d2-b380-b33dbe5f5fb1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "66f75eaf-5b42-48d2-b380-b33dbe5f5fb1")
 		)
 		(pin "PHASE_PWM_HIGH_A_U" output
 			(at 245.11 77.47 0)
+			(uuid "d0d23872-3ac9-45f1-b3ee-53a7e02ddd8c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d0d23872-3ac9-45f1-b3ee-53a7e02ddd8c")
 		)
 		(pin "PHASE_I_SENSE_B_W" input
 			(at 245.11 165.1 0)
+			(uuid "dd09f7e7-771d-4176-a9ac-e66178abdf6d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dd09f7e7-771d-4176-a9ac-e66178abdf6d")
 		)
 		(pin "FAN_PWM" output
 			(at 173.99 109.22 180)
+			(uuid "0b4040cc-c00e-4ea8-92b0-71f5672a8443")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0b4040cc-c00e-4ea8-92b0-71f5672a8443")
 		)
 		(pin "TIMER_A_BREAK_2" bidirectional
 			(at 173.99 139.7 180)
+			(uuid "35eae896-e422-4e50-b34f-4c9c9130027b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "35eae896-e422-4e50-b34f-4c9c9130027b")
 		)
 		(pin "TIMER_C_BREAK" bidirectional
 			(at 173.99 130.81 180)
+			(uuid "bde9046a-884e-4e09-8383-9c8296da8db5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bde9046a-884e-4e09-8383-9c8296da8db5")
 		)
 		(pin "PHASE_PWM_LOW_C_W" output
 			(at 245.11 128.27 0)
+			(uuid "3b55e91a-cc35-4ed0-a79b-455c32a604a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3b55e91a-cc35-4ed0-a79b-455c32a604a9")
 		)
 		(pin "PORT_2_LED_1" output
 			(at 173.99 100.33 180)
+			(uuid "5ff6ba2f-0388-4518-b04e-72f3274bf1fa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5ff6ba2f-0388-4518-b04e-72f3274bf1fa")
 		)
 		(pin "FAN_TACH" input
 			(at 173.99 111.76 180)
+			(uuid "21be20ff-4247-4561-bcfe-a1e1afeb818c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "21be20ff-4247-4561-bcfe-a1e1afeb818c")
 		)
 		(pin "PORT_1_LED_0" output
 			(at 173.99 95.25 180)
+			(uuid "2352f349-bf27-4fca-980c-8ff2b1b09a0b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2352f349-bf27-4fca-980c-8ff2b1b09a0b")
 		)
 		(pin "PORT_2_LED_0" output
 			(at 173.99 102.87 180)
+			(uuid "f7dbfa6d-5668-4938-9f71-cc98a513070d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f7dbfa6d-5668-4938-9f71-cc98a513070d")
 		)
 		(pin "COMM_RX_PASSTHROUGH_ENABLE" output
 			(at 173.99 88.9 180)
+			(uuid "3019c21d-58b3-4c13-99ad-95cd4d036bf5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3019c21d-58b3-4c13-99ad-95cd4d036bf5")
 		)
 		(pin "PORT_1_LED_1" output
 			(at 173.99 97.79 180)
+			(uuid "6d025532-e550-4457-a8f2-57b9c5522dac")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6d025532-e550-4457-a8f2-57b9c5522dac")
 		)
 		(pin "PHASE_SENSE_VREF" output
 			(at 245.11 146.05 0)
+			(uuid "1a823596-7407-403f-962b-88bad9f7dd2c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1a823596-7407-403f-962b-88bad9f7dd2c")
 		)
 		(pin "INVERTER_C_TEMP" input
 			(at 245.11 198.12 0)
+			(uuid "f1845958-02e2-48d3-bd4b-ea8b65aa2f0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f1845958-02e2-48d3-bd4b-ea8b65aa2f0a")
 		)
 		(pin "INVERTER_B_TEMP" input
 			(at 245.11 195.58 0)
+			(uuid "3978ff7c-cac4-4f25-aa0c-f7f6a8848dcf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3978ff7c-cac4-4f25-aa0c-f7f6a8848dcf")
 		)
 		(pin "INVERTER_A_TEMP" input
 			(at 245.11 193.04 0)
+			(uuid "a50b6d5f-f44a-44e7-91d6-9f78790226e8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a50b6d5f-f44a-44e7-91d6-9f78790226e8")
 		)
 		(pin "INVERTER_A_FAULT" input
 			(at 245.11 203.2 0)
+			(uuid "ede35d19-66ba-41b7-9534-69aa91e07f39")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ede35d19-66ba-41b7-9534-69aa91e07f39")
 		)
 		(pin "INVERTER_B_FAULT" input
 			(at 245.11 205.74 0)
+			(uuid "20433631-eff2-48c3-b84d-7b3b154f4d0e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "20433631-eff2-48c3-b84d-7b3b154f4d0e")
 		)
 		(pin "INVERTER_C_FAULT" input
 			(at 245.11 208.28 0)
+			(uuid "0896e9c4-d078-4706-a79f-d36216d49d83")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0896e9c4-d078-4706-a79f-d36216d49d83")
 		)
 		(pin "STO_FBK" output
 			(at 173.99 151.13 180)
+			(uuid "fdead43d-ceb6-4ad5-b61c-4ac08d1dc9c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fdead43d-ceb6-4ad5-b61c-4ac08d1dc9c0")
 		)
 		(pin "INVERTER_C_THERM_2" input
 			(at 245.11 245.11 0)
+			(uuid "2c588b07-9293-4cf6-bfe2-777da663a272")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2c588b07-9293-4cf6-bfe2-777da663a272")
 		)
 		(pin "INVERTER_C_THERM_1" input
 			(at 245.11 242.57 0)
+			(uuid "a073b8a6-cf01-4989-8ff5-6fddd9ae648d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a073b8a6-cf01-4989-8ff5-6fddd9ae648d")
 		)
 		(pin "INVERTER_A_THERM_2" input
 			(at 245.11 229.87 0)
+			(uuid "43fec541-a8b8-4200-9563-ed7199753268")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "43fec541-a8b8-4200-9563-ed7199753268")
 		)
 		(pin "INVERTER_A_THERM_1" input
 			(at 245.11 227.33 0)
+			(uuid "b9d7321c-1542-4a5f-88f5-6d46997e6a56")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b9d7321c-1542-4a5f-88f5-6d46997e6a56")
 		)
 		(pin "INVERTER_B_THERM_1" input
 			(at 245.11 234.95 0)
+			(uuid "02ac2c0a-5826-4094-bac2-2d7091bcaac5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "02ac2c0a-5826-4094-bac2-2d7091bcaac5")
 		)
 		(pin "INVERTER_B_THERM_2" input
 			(at 245.11 237.49 0)
+			(uuid "6acd58d5-9378-4f8c-8bd8-18b0981df097")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6acd58d5-9378-4f8c-8bd8-18b0981df097")
 		)
 		(pin "INVERTER_DISABLE" output
 			(at 173.99 179.07 180)
+			(uuid "afccebeb-7b65-4235-91a4-54d4c973e6e3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "afccebeb-7b65-4235-91a4-54d4c973e6e3")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -6406,17 +6490,23 @@
 	(sheet
 		(at 276.86 139.7)
 		(size 38.1 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b46249ad-f9fb-4ce2-94ec-6093284ea43c")
 		(property "Sheetname" "Current Sense"
 			(at 276.86 138.9884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6426,6 +6516,8 @@
 		)
 		(property "Sheetfile" "current_sense.kicad_sch"
 			(at 276.86 203.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6435,283 +6527,283 @@
 		)
 		(pin "SENSE_B_W" output
 			(at 276.86 165.1 180)
+			(uuid "ce11a4b2-0066-4b31-bd64-a6855406d014")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ce11a4b2-0066-4b31-bd64-a6855406d014")
 		)
 		(pin "VREF" input
 			(at 276.86 146.05 180)
+			(uuid "4341bcc8-acec-40ac-9d50-082be2e5219b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4341bcc8-acec-40ac-9d50-082be2e5219b")
 		)
 		(pin "SENSE_A_W" output
 			(at 276.86 156.21 180)
+			(uuid "95e3a59f-f881-4414-882c-3f5bed423520")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "95e3a59f-f881-4414-882c-3f5bed423520")
 		)
 		(pin "SENSE_C_W" output
 			(at 276.86 173.99 180)
+			(uuid "f7c9ef5a-94c5-4c5a-9403-d2c80f7965a1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f7c9ef5a-94c5-4c5a-9403-d2c80f7965a1")
 		)
 		(pin "SENSE_C_V_P" input
 			(at 314.96 189.23 0)
+			(uuid "7c7bac66-0740-4957-a2b5-a2092f9e6d7b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7c7bac66-0740-4957-a2b5-a2092f9e6d7b")
 		)
 		(pin "SENSE_C_V_N" input
 			(at 314.96 191.77 0)
+			(uuid "8a285aa1-d677-4fbb-83d3-6c04a6033829")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8a285aa1-d677-4fbb-83d3-6c04a6033829")
 		)
 		(pin "SENSE_C_V" output
 			(at 276.86 171.45 180)
+			(uuid "e90267cc-c28b-4ba2-811d-e05f534c0b85")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e90267cc-c28b-4ba2-811d-e05f534c0b85")
 		)
 		(pin "SENSE_C_W_P" input
 			(at 314.96 194.31 0)
+			(uuid "c7dae538-b0e4-4541-9a6f-21786f19929e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c7dae538-b0e4-4541-9a6f-21786f19929e")
 		)
 		(pin "SENSE_C_W_N" input
 			(at 314.96 196.85 0)
+			(uuid "1b804fe0-7808-4bee-ad23-3cc3c8120048")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1b804fe0-7808-4bee-ad23-3cc3c8120048")
 		)
 		(pin "SENSE_B_W_P" input
 			(at 314.96 175.26 0)
+			(uuid "ed9c0f0e-4b29-41cd-a4d6-25e641550d2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ed9c0f0e-4b29-41cd-a4d6-25e641550d2d")
 		)
 		(pin "SENSE_B_V" output
 			(at 276.86 162.56 180)
+			(uuid "8f74c715-443d-4947-abc1-e16b9415c5af")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8f74c715-443d-4947-abc1-e16b9415c5af")
 		)
 		(pin "SENSE_B_W_N" input
 			(at 314.96 177.8 0)
+			(uuid "64d67b72-7b64-4468-8ccc-36dec1cc86d4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "64d67b72-7b64-4468-8ccc-36dec1cc86d4")
 		)
 		(pin "SENSE_A_V_P" input
 			(at 314.96 151.13 0)
+			(uuid "7e1a4be2-4b70-44a2-a6ce-230a9f5f43bd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7e1a4be2-4b70-44a2-a6ce-230a9f5f43bd")
 		)
 		(pin "SENSE_A_V_N" input
 			(at 314.96 153.67 0)
+			(uuid "6ad17189-98e6-404f-8a2c-e7fd3e355f69")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6ad17189-98e6-404f-8a2c-e7fd3e355f69")
 		)
 		(pin "SENSE_A_V" output
 			(at 276.86 153.67 180)
+			(uuid "56591557-32a8-47b3-9551-b76766425c1e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "56591557-32a8-47b3-9551-b76766425c1e")
 		)
 		(pin "SENSE_A_W_P" input
 			(at 314.96 156.21 0)
+			(uuid "31748c92-c561-4561-87b0-5c52ce85e61f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "31748c92-c561-4561-87b0-5c52ce85e61f")
 		)
 		(pin "SENSE_A_W_N" input
 			(at 314.96 158.75 0)
+			(uuid "bff8972b-cc17-4553-9669-a7af774704a4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bff8972b-cc17-4553-9669-a7af774704a4")
 		)
 		(pin "SENSE_B_V_P" input
 			(at 314.96 170.18 0)
+			(uuid "fa802957-8b9a-4291-be9f-1d6fda87c658")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fa802957-8b9a-4291-be9f-1d6fda87c658")
 		)
 		(pin "SENSE_B_V_N" input
 			(at 314.96 172.72 0)
+			(uuid "55a1b6e1-0336-4c2e-9340-0ff8846b2bd7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "55a1b6e1-0336-4c2e-9340-0ff8846b2bd7")
 		)
 		(pin "SENSE_C_U_N" input
 			(at 314.96 186.69 0)
+			(uuid "fecf530a-9ccc-4550-8a66-677c222fcd79")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fecf530a-9ccc-4550-8a66-677c222fcd79")
 		)
 		(pin "SENSE_C_U" output
 			(at 276.86 168.91 180)
+			(uuid "e850279b-955a-4429-8884-a7326a43ddf5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e850279b-955a-4429-8884-a7326a43ddf5")
 		)
 		(pin "SENSE_C_U_P" input
 			(at 314.96 184.15 0)
+			(uuid "1b2cb8d4-214a-45c6-93d2-f011768dd10f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1b2cb8d4-214a-45c6-93d2-f011768dd10f")
 		)
 		(pin "SENSE_A_U_N" input
 			(at 314.96 148.59 0)
+			(uuid "d13d65bc-ff29-4ef8-b448-6e595fec7ed9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d13d65bc-ff29-4ef8-b448-6e595fec7ed9")
 		)
 		(pin "SENSE_A_U_P" input
 			(at 314.96 146.05 0)
+			(uuid "51b26cb9-f073-4169-8cb3-38411bafe311")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "51b26cb9-f073-4169-8cb3-38411bafe311")
 		)
 		(pin "SENSE_B_U_P" input
 			(at 314.96 165.1 0)
+			(uuid "75138d22-e9d8-4ba3-8890-1f1bf3781e2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "75138d22-e9d8-4ba3-8890-1f1bf3781e2d")
 		)
 		(pin "SENSE_B_U_N" input
 			(at 314.96 167.64 0)
+			(uuid "94e825c8-e5cb-49e7-a054-d4cf33813071")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "94e825c8-e5cb-49e7-a054-d4cf33813071")
 		)
 		(pin "SENSE_A_U" output
 			(at 276.86 151.13 180)
+			(uuid "56c00483-2177-4199-b7b3-59d105031b40")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "56c00483-2177-4199-b7b3-59d105031b40")
 		)
 		(pin "SENSE_B_U" output
 			(at 276.86 160.02 180)
+			(uuid "cb67f1ac-5f8b-433a-837f-d1c2265155f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cb67f1ac-5f8b-433a-837f-d1c2265155f6")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -6724,17 +6816,23 @@
 	(sheet
 		(at 472.44 153.67)
 		(size 22.86 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "e1b388d9-25a4-4129-98a8-95daba72cb1c")
 		(property "Sheetname" "Power Connectors"
 			(at 472.44 152.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,6 +6842,8 @@
 		)
 		(property "Sheetfile" "power_connectors.kicad_sch"
 			(at 472.44 189.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6753,93 +6853,93 @@
 		)
 		(pin "PHASE_A_W" bidirectional
 			(at 472.44 163.83 180)
+			(uuid "0bacbb88-a572-45d6-829e-9c69286edc5e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0bacbb88-a572-45d6-829e-9c69286edc5e")
 		)
 		(pin "PHASE_A_U" bidirectional
 			(at 472.44 158.75 180)
+			(uuid "e23809b4-baad-4ec9-ae63-8993a7df0925")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e23809b4-baad-4ec9-ae63-8993a7df0925")
 		)
 		(pin "PHASE_A_V" bidirectional
 			(at 472.44 161.29 180)
+			(uuid "40a36846-411f-40e0-84b1-e9f03c8d1be3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "40a36846-411f-40e0-84b1-e9f03c8d1be3")
 		)
 		(pin "PHASE_C_U" bidirectional
 			(at 472.44 179.07 180)
+			(uuid "7b7787f7-df90-40b7-883b-48e059b1b2b2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7b7787f7-df90-40b7-883b-48e059b1b2b2")
 		)
 		(pin "PHASE_B_U" bidirectional
 			(at 472.44 168.91 180)
+			(uuid "8b3a1b4b-c0f3-4de2-b027-c34c628ced8a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8b3a1b4b-c0f3-4de2-b027-c34c628ced8a")
 		)
 		(pin "PHASE_B_W" bidirectional
 			(at 472.44 173.99 180)
+			(uuid "42074961-c3ee-400b-ba84-0c0a158fca96")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "42074961-c3ee-400b-ba84-0c0a158fca96")
 		)
 		(pin "PHASE_C_W" bidirectional
 			(at 472.44 184.15 180)
+			(uuid "ebde4330-3623-4325-9114-5870eeb78f64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ebde4330-3623-4325-9114-5870eeb78f64")
 		)
 		(pin "PHASE_B_V" bidirectional
 			(at 472.44 171.45 180)
+			(uuid "5e644481-abab-4b58-ba2b-745ec48c38fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5e644481-abab-4b58-ba2b-745ec48c38fd")
 		)
 		(pin "PHASE_C_V" bidirectional
 			(at 472.44 181.61 180)
+			(uuid "ddbfe6f1-a477-434d-980a-f8482f2157e8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ddbfe6f1-a477-434d-980a-f8482f2157e8")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -6852,17 +6952,23 @@
 	(sheet
 		(at 55.88 171.45)
 		(size 35.56 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "e687bc0a-c1a4-49c8-a582-2ee121a74ec7")
 		(property "Sheetname" "STO"
 			(at 55.88 170.7384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6872,6 +6978,8 @@
 		)
 		(property "Sheetfile" "STO.kicad_sch"
 			(at 55.88 188.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6881,33 +6989,33 @@
 		)
 		(pin "STO_FBK" input
 			(at 91.44 184.15 0)
+			(uuid "47de7828-e59d-46a9-8375-ec65e38a7174")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "47de7828-e59d-46a9-8375-ec65e38a7174")
 		)
 		(pin "STO_CH2" output
 			(at 91.44 179.07 0)
+			(uuid "fa645da6-ddb7-4236-adc4-0dbdcf17126a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fa645da6-ddb7-4236-adc4-0dbdcf17126a")
 		)
 		(pin "STO_CH1" output
 			(at 91.44 176.53 0)
+			(uuid "2a398bf6-ffb7-4629-93dd-d0c6cba2361d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2a398bf6-ffb7-4629-93dd-d0c6cba2361d")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -6920,17 +7028,23 @@
 	(sheet
 		(at 407.67 219.71)
 		(size 27.94 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "f9b2e3e2-8826-4e27-8473-89b1dab58dc9")
 		(property "Sheetname" "Inverter B"
 			(at 407.67 218.9984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6940,6 +7054,8 @@
 		)
 		(property "Sheetfile" "inverter_B.kicad_sch"
 			(at 407.67 281.2546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6949,203 +7065,203 @@
 		)
 		(pin "U" bidirectional
 			(at 435.61 228.6 0)
+			(uuid "240c6dec-5d1b-4691-82a4-c5b7a20a7823")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "240c6dec-5d1b-4691-82a4-c5b7a20a7823")
 		)
 		(pin "THERM_1" passive
 			(at 407.67 223.52 180)
+			(uuid "ea9207f6-1c53-4c72-8941-8fda1e4dce6c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea9207f6-1c53-4c72-8941-8fda1e4dce6c")
 		)
 		(pin "THERM_2" passive
 			(at 407.67 226.06 180)
+			(uuid "9b6d878d-e0c8-4f33-a675-17801ad5e67c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9b6d878d-e0c8-4f33-a675-17801ad5e67c")
 		)
 		(pin "NW_SENSE_P" output
 			(at 407.67 271.78 180)
+			(uuid "98bb93c6-738b-4878-b026-f8312e1775ff")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "98bb93c6-738b-4878-b026-f8312e1775ff")
 		)
 		(pin "FAULT_N" output
 			(at 407.67 233.68 180)
+			(uuid "901c12b1-abb3-408e-aece-abcdfd8bef9b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "901c12b1-abb3-408e-aece-abcdfd8bef9b")
 		)
 		(pin "NU_SENSE_P" output
 			(at 407.67 261.62 180)
+			(uuid "38d6ec15-cac0-4e98-8eb2-22f0e7ab57d2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "38d6ec15-cac0-4e98-8eb2-22f0e7ab57d2")
 		)
 		(pin "NV_SENSE_P" output
 			(at 407.67 266.7 180)
+			(uuid "9736c023-d3b0-4936-ab63-7b651fe96507")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9736c023-d3b0-4936-ab63-7b651fe96507")
 		)
 		(pin "W" bidirectional
 			(at 435.61 233.68 0)
+			(uuid "87596076-2b19-4720-9d07-71d7bc2d61cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "87596076-2b19-4720-9d07-71d7bc2d61cf")
 		)
 		(pin "V" bidirectional
 			(at 435.61 231.14 0)
+			(uuid "b2573262-c446-4278-81b5-78675b0dc28e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b2573262-c446-4278-81b5-78675b0dc28e")
 		)
 		(pin "TEMP" output
 			(at 407.67 228.6 180)
+			(uuid "ca485cb7-a6fe-4cdb-a7df-8f588731f78a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ca485cb7-a6fe-4cdb-a7df-8f588731f78a")
 		)
 		(pin "LIN_U" input
 			(at 407.67 251.46 180)
+			(uuid "2905636c-cb72-4da0-b1d5-05b2be7e0167")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2905636c-cb72-4da0-b1d5-05b2be7e0167")
 		)
 		(pin "LIN_V" input
 			(at 407.67 254 180)
+			(uuid "d769b7ef-4e23-421f-9078-f28fb3dee390")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d769b7ef-4e23-421f-9078-f28fb3dee390")
 		)
 		(pin "LIN_W" input
 			(at 407.67 256.54 180)
+			(uuid "4a46524d-9289-4bac-b619-6165ce85cef1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4a46524d-9289-4bac-b619-6165ce85cef1")
 		)
 		(pin "HIN_W" input
 			(at 407.67 247.65 180)
+			(uuid "2bef7ef1-b236-4f21-b1bd-fb4cbfdbf7eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2bef7ef1-b236-4f21-b1bd-fb4cbfdbf7eb")
 		)
 		(pin "HIN_U" input
 			(at 407.67 242.57 180)
+			(uuid "da376da1-51fb-4259-bce1-55c9128d9cb9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "da376da1-51fb-4259-bce1-55c9128d9cb9")
 		)
 		(pin "HIN_V" input
 			(at 407.67 245.11 180)
+			(uuid "ab2d0f65-00a4-49d3-b741-689a65ef60ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ab2d0f65-00a4-49d3-b741-689a65ef60ea")
 		)
 		(pin "PROTECT" input
 			(at 407.67 231.14 180)
+			(uuid "96d82c09-e238-4e64-ae67-73610df4d0ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "96d82c09-e238-4e64-ae67-73610df4d0ea")
 		)
 		(pin "NW_SENSE_N" output
 			(at 407.67 274.32 180)
+			(uuid "8d20cae0-0946-44e8-a848-59c62bd6a84a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8d20cae0-0946-44e8-a848-59c62bd6a84a")
 		)
 		(pin "NU_SENSE_N" output
 			(at 407.67 264.16 180)
+			(uuid "c78592b7-b774-46f4-8007-c1c35c412e45")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c78592b7-b774-46f4-8007-c1c35c412e45")
 		)
 		(pin "NV_SENSE_N" output
 			(at 407.67 269.24 180)
+			(uuid "e9e3320e-87d5-4f66-bdf6-346918c25c9f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e9e3320e-87d5-4f66-bdf6-346918c25c9f")
 		)
 		(instances
 			(project "high voltage servo drive 3ch"
@@ -7160,4 +7276,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
