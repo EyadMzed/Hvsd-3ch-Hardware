@@ -3497,7 +3497,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "204ce7df-dfdc-4910-ab61-128888c676d8")
 		(property "Reference" "C135"
@@ -4291,7 +4291,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "623a7d3c-11ee-4244-9f52-f11216d57400")
 		(property "Reference" "C134"
@@ -4698,7 +4698,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79faa87e-5a8b-45c8-bed8-bf5b15edacee")
 		(property "Reference" "J7"
@@ -4833,7 +4833,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84d7fd8e-86d4-44dd-b946-cc07f0226a0b")
 		(property "Reference" "C132"
@@ -5048,7 +5048,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "895c4884-ac77-4a21-aeb7-c0b740c16b7b")
 		(property "Reference" "C21"
@@ -5341,7 +5341,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99d81889-28dd-4454-afa1-eaef54dbb83c")
 		(property "Reference" "C131"
@@ -5478,7 +5478,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0726dee-29e3-40bf-88b3-1352a576c725")
 		(property "Reference" "J5"
@@ -5618,7 +5618,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aafc28dc-bdd7-4397-90ab-cc89049a202a")
 		(property "Reference" "C130"
@@ -6548,7 +6548,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9c9fd8e-c4fb-4293-8c9b-bad6448318a2")
 		(property "Reference" "J4"
@@ -7115,7 +7115,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eebf986a-fda6-451f-9d1d-4045b497261f")
 		(property "Reference" "C133"
@@ -7252,7 +7252,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8c4bc96-4567-40e9-b98c-bae6df767263")
 		(property "Reference" "J6"
